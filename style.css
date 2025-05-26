@@ -1,0 +1,66 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    background-color: rgba(89, 134, 219, 0.918);
+}
+
+header {
+    background-color: rgba(32, 104, 238, 0.897);
+    display: inline-block;
+}
+header img{
+    font-size: 50px;
+    text-align: center;
+}
+nav {
+    background-color:rgb(0, 225, 255);
+    display: inline-block;      /* Cambiado a inline-block */
+    width: 80%;                /* Ancho de aproximadamente 80% */
+}
+
+/* Selector descendente para la imagen dentro de nav */
+nav li{
+    flex-grow: 1;                /* Hace que cada <li> crezca proporcionalmente */
+    text-align: center;          /* Centra el texto dentro de cada <li> */
+    font-size: clamp(1rem, 2vw, 2rem); /* Tamaño de fuente responsivo */
+    padding: 0.5em 0;            /* Algo de espacio arriba y abajo */
+}
+main {
+    background-color: aquamarine;
+    font-size: 120%;
+}
+
+footer {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: dimgrey;
+    text-align: center;
+    font-size: 500%;
+}
+
+
+
+/* Estilizar la clase grid con rejilla de dos columnas */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;   /* Dos columnas con aproximadamente 40% cada una */
+    justify-content: center;           /* Ajustable para centrar el grid */
+    align-items: start;                /* Ajustable para alinear los items */
+    row-gap: 20px;                    /* Espacio entre filas, puede ajustar el valor */
+}
+
+/* Selector descendente para imágenes dentro de .grid */
+.grid img {
+    width: 100%;                     /* Ancho 100% solo para imágenes dentro de grid */
+    flex-wrap: wrap;
+}
+
+/* Estilo para la clase flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;                 /* Permite que los items se ajusten en varias filas */
+    align-items: start;
+}
